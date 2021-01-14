@@ -60,6 +60,7 @@ namespace vibrator {
 #define MSM_CPU_SHIMA           450
 #define MSM_CPU_SM8325          501
 #define APQ_CPU_SM8325P         502
+#define MSM_CPU_TARO            457
 #define MSM_CPU_YUPIK           475
 
 #define test_bit(bit, array)    ((array)[(bit)/8] & (1<<((bit)%8)))
@@ -145,6 +146,7 @@ InputFFDevice::InputFFDevice()
             case MSM_CPU_SHIMA:
             case MSM_CPU_SM8325:
             case APQ_CPU_SM8325P:
+            case MSM_CPU_TARO:
             case MSM_CPU_YUPIK:
                 mSupportExternalControl = true;
                 break;
